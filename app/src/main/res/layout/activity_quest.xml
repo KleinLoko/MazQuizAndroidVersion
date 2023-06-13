@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ilustraci_n6_quest_page_196_peque"
+    tools:context=".QuestActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Pregunta"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/preguntaTW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="/esperando pregunta"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button6"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:onClick="comprobarCorrecta3"
+        android:layout_width="170dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="120dp"
+        android:background="@color/black"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:onClick="comprobarCorrecta4"
+        android:layout_width="170dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="24dp"
+        android:background="@color/black"
+        android:shadowColor="#AF6D38"
+        android:text="Button"
+        app:iconTint="#7E3030"
+        app:layout_constraintBottom_toBottomOf="@+id/button6"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button3"
+        android:onClick="comprobarCorrecta2"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="170dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/black"
+        android:shadowColor="#AF6D38"
+        android:text="Button"
+        app:iconTint="#7E3030"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="@+id/button2" />
+
+    <Button
+        android:id="@+id/button4"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="170dp"
+        android:layout_height="120dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        android:background="@color/black"
+        android:shadowColor="#AF6D38"
+        android:text="Button"
+        android:onClick="comprobarCorrecta1"
+        app:iconTint="#7E3030"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
+        app:layout_constraintEnd_toStartOf="@+id/button3"
+        app:layout_constraintStart_toStartOf="@+id/button6" />
+
+
+    <TextView
+        android:id="@+id/resValue1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="__"
+
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/resValue2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="__"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/resValue3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="__"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/resValue4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="__"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
